@@ -1,18 +1,25 @@
-import java.util.Scanner;
+import java.util.*;
+import java.lang.*;
+import java.io.*;
 
-public class remainder {
-    public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        int n;
-        n=sc.nextInt();
-        int num1,num2;
-        for(int i=0;i<n;i++){
-            num1=sc.nextInt();
-            num2=sc.nextInt();
-            int rem=num1%num2;
-            System.out.println(rem);
-        }
+/* Name of the class has to be "Main" only if the class is public. */
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		// your code goes here
+		Scanner input = new Scanner(System.in);
+		int NoOfInputs = input.nextInt();
+		
+		for(int i = 0; i < NoOfInputs; i++){
+		    int number1 = input.nextInt();
+		    int number2 = input.nextInt();
+		    
+		    int ans = number1 % number2;
+		    System.out.println(ans);
 
-    }
-    
+		    
+		}
+		
+	}
 }
