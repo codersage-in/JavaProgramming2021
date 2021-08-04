@@ -1,38 +1,29 @@
-//Explain Scanner class
-//Explain array
-//Explain String function-charAt
-//Explain operator
+/* package codechef; // don't place package name! */
 
+import java.util.*;
+import java.lang.*;
+import java.io.*;
 
-import java.util.Scanner;
-
-public class SumOfDigits{
-    public static void main(String argds[]){
-        Scanner sc = new Scanner(System.in);
-
-        // Get the total nos.
-        int loopCount = sc.nextInt();
-        
-        // Declare the varaible to hold the numbers
-        String data[] = new String[loopCount];
-
-        // Get the individual numbers
-        for(int i = 0; i < loopCount;i++){
-            data[i] = sc.next();
-        }
-
-        // do the summation 
-        for(int i = 0; i < loopCount;i++){
-
-            // Get the individual character from the string
-            char temp;
-            int sum = 0;
-            for (int stringIndex = 0 ; stringIndex < data[i].length();stringIndex++){
-
-                // Do the addition
-                sum = sum + (data[i].charAt(stringIndex) - '0');
-            }
-            System.out.println(sum);
-        } 
-    }
+/* Name of the class has to be "Main" only if the class is public. */
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+    	// Take Input from user
+    	Scanner input = new Scanner(System.in);
+    	int noOfInputs = input.nextInt();
+    	
+    	for(int i =0;i<noOfInputs;i++){
+    	    String number = input.next(); // 135 (1 + 3 + 5)
+    	    int sum = 0;
+    	// how to get individual digits from the Input
+    	    for(int j = 0; j<number.length(); j++){
+    	        // Do addition of the digits
+    	        sum = sum + (number.charAt(j) - '0'); // char 1 corresponing ascii value
+    	    }
+    	System.out.println(sum);
+    	
+    	}
+    	
+	}
 }
