@@ -13,7 +13,7 @@ class AMSTRONG {
         }
         input.close();
     }
-    
+    //shubham
     static boolean isAmstrong(int x){
 
         int temp;
