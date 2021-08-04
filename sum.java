@@ -1,8 +1,8 @@
-package com.company;
 import java.util.*;
 
+
 public class sum{
-    public static void main(String ar[]){
+    public static void main (String ar[]){
 
         Scanner input= new Scanner(System.in);
         int noOfInput= input.nextInt();
@@ -14,7 +14,7 @@ public class sum{
                 sum=sum+(data.charAt(CharCount)-'0');
             }
             System.out.println(sum);
-
         }
+        input.close();
     }
 }
