@@ -1,18 +1,28 @@
-import java.util.Scanner;
-
-public class remainder {
-    public static void main(String[] args) {
+import java.util.*;
+public class Remainder
+{
+    public static void main (String[] args) throws java.lang.Exception
+    {
         Scanner sc=new Scanner(System.in);
-        int n;
+        int n,number,rev;
         n=sc.nextInt();
-        int num1,num2;
-        for(int i=0;i<n;i++){
-            num1=sc.nextInt();
-            num2=sc.nextInt();
-            int rem=num1%num2;
-            System.out.println(rem);
+        if(n>=1 && n<=1000)
+        {
+            for(int i=0;i<n;i++)
+            {
+                number=sc.nextInt();
+                rev=0;
+                if(number>=1 && number<=1000000)
+                {
+                    while(number>0)
+                    {
+                        int rem=number%10;
+                        rev=rev*10+rem;
+                        number=number/10;
+                    }
+                }
+                System.out.println(rev);
+            }
         }
-
     }
-    
 }
