@@ -1,0 +1,19 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        String Str = scan.nextLine();
+        // Write your code here.
+        String arrayStr[]=Str.split("[ ,._@!'?]+");
+        System.out.println(arrayStr.length);
+        for(int i=0;i<arrayStr.length;i++)
+        {
+            System.out.println(arrayStr[i]);
+        }
+        scan.close();
+    }
+}
+
