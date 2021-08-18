@@ -1,0 +1,50 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        
+        Scanner sc=new Scanner(System.in);
+        String A=sc.nextLine();
+        String B=sc.nextLine();
+        
+        int count  = A.length() + B.length();
+        
+        System.out.println(count);
+        
+        String firstLetStr1 = A.substring(0);
+        String firstLetStr2 = B.substring(0);
+        
+        if (firstLetStr1.compareTo(firstLetStr2) > 0)
+        {
+            System.out.println("Yes");
+        }
+        else
+        {
+            System.out.println("No");
+        }
+        
+        String S1 = A.substring(0,1);
+        String R1 = A.substring(1);
+        S1 = S1.toUpperCase();
+        
+        String S2 = B.substring(0,1);
+        String R2 = B.substring(1);
+        S2 = S2.toUpperCase();
+        System.out.println(S1+R1+" "+S2+R2);
+       /* String remLetStr1 = A.substring(1);
+        firstLetStr1 = firstLetStr1.toUpperCase();
+        String A1 = firstLetStr1 + remLetStr1;
+        
+        String firstLetStr2 = B.substring(0,1);
+        String remLetStr2 = B.substring(1);
+        firstLetStr2 = firstLetStr2.toUpperCase();
+        String B1 = firstLetStr2 + remLetStr2;
+        
+        System.out.println(String A1+" "+String B1);*/
+    }
+}
+
+
+
