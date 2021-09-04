@@ -24,5 +24,7 @@ public class chefoperator
                 System.out.println("=");
             }
         }
+        sc.close();
     }
 }
+

@@ -14,5 +14,6 @@ public class addtwonumbers
             int ans = a + b;
             System.out.println("Sum of " + a + " and " + b + " = " + ans);
         }
+        sc.close();
     }
 }

@@ -20,5 +20,7 @@ public class squareroot
                 }
             }
         }
+        sc.close();
     }
 }
+

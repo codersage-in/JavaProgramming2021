@@ -3,15 +3,14 @@ public class smallfactorials
 {
     public static void main(String args[])
     {
-        Scanner s = new Scanner(System.in);
-        double x=1;
-        int t;
+        Scanner sc=new Scanner(System.in);
+        int t,n,x=1;
         System.out.println("Enter the length");
-        t=s.nextInt();
+        t=sc.nextInt();
         while(t--!=0)
         {
             System.out.println("Enter the number = ");
-           int n=s.nextInt();
+            n=sc.nextInt();
             for(int i=n;i>0;i--)
             {
                 x = x * i;
@@ -19,5 +18,6 @@ public class smallfactorials
             System.out.println("Factorial = " + x);
             x=1;
         }
+        sc.close();
     }
 }

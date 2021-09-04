@@ -19,5 +19,7 @@ public class helpingchef
                     System.out.println("-1");
                 }
             }
+            in.close();
     }
 }
+

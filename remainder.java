@@ -18,5 +18,6 @@ public class remainder
         {
             System.out.println(rem[i]);
         }
+        sc.close();
     }
 }
