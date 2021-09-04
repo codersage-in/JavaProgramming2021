@@ -1,0 +1,1 @@
+No template exists for this language. Erase this and please write full code.
