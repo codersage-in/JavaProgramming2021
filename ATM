@@ -1,0 +1,22 @@
+/* package codechef; // don't place package name! */
+
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+/* Name of the class has to be "Main" only if the class is public. */
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner sc = new Scanner(System.in);
+	    double withdrawl_bal = sc.nextDouble();
+	    double current_bal = sc.nextDouble();
+	    
+	    if (withdrawl_bal % 5 == 0 && current_bal >= withdrawl_bal + 0.5){
+	        current_bal = current_bal - withdrawl_bal - 0.5;
+	    }
+	    
+		System.out.printf("%.2f",current_bal);
+	}
+}
