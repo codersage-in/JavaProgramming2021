@@ -1,23 +1,20 @@
-import java.util.Scanner;
+import java.util.*;
+import java.lang.*;
+import java.io.*;
 
-public class ATM {
-    public static void main(String ar[]){
-        Scanner i = new Scanner(System.in);
-        double amount=120;
-        System.out.println("Enter the amount you want to withdraw");
-        double input=i.nextDouble();
-        double charges=0.5;
-        if(input%5==0){
-            if(input<amount){
-                double withdraw=amount-input-charges;
-                System.out.println(String.format("%.2f",withdraw));
-            }
-            else{
-                System.out.println("The amount you want to withdraw is greater than amount in your account");
-            }
-        }
-        else{
-            System.out.println("The amount must be in multiple of 5");
-        }
-    }
+/* Name of the class has to be "Main" only if the class is public. */
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+	    Scanner sc = new Scanner(System.in);
+	    double withdrawl_bal = sc.nextDouble();
+	    double curr_bal = sc.nextDouble();
+	    
+	    if (withdrawl_bal % 5 == 0 && curr_bal >= withdrawl_bal + 0.5){
+	        curr_bal = curr_bal - (withdrawl_bal + 0.5);
+	    }
+		// your code goes here
+		System.out.printf("%.2f",curr_bal);
+	}
 }
