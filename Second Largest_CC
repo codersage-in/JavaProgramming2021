@@ -1,0 +1,26 @@
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+
+class Second_l_n
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner ip = new Scanner(System.in);
+		int t = ip.nextInt();
+		for(int i=0;i<t;i++)
+		{
+		    int a = ip.nextInt();
+		    int b = ip.nextInt();
+		    int c = ip.nextInt();
+		    
+		    if((a>b && a<c) || (a>c && a<b))
+		      System.out.println(a);
+		    else if((b>a && b<c) || (b>c && b<a))
+		      System.out.println(b);
+		    else
+		      System.out.println(c);
+		}
+	}
+}
