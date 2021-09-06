@@ -1,0 +1,29 @@
+/* package codechef; // don't place package name! */
+
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class Main
+{
+    public static void main (String[] args) throws java.lang.Exception
+    {
+         Scanner sc=new Scanner(System.in);
+         int TEST = sc.nextInt();
+         while(TEST-->0)
+         {
+             int a=sc.nextInt();
+             int b=sc.nextInt();
+             float dis=a*b;
+             if(a>1000)
+             {
+                 dis=dis-(dis/10);
+                 System.out.println(dis);
+             }
+             else
+             {
+                 System.out.println(dis);
+             }
+         }
+    }
+}
