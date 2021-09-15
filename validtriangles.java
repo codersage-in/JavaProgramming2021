@@ -10,15 +10,15 @@ public static void main (String[] args) throws java.lang.Exception
 // your code goes here
 Scanner sc = new Scanner(System.in);
 int T = sc.nextInt();
-for(int i=1; i<=T ; i++)
+for(int i=1 ; i<=T ; i++)
 {
-   int fact=1;
-   int N = sc.nextInt();
-   for(int j=1 ; j<=N ; j++)
-   {
-       fact = fact*j;
-   }
-   System.out.println(fact);
+   int A = sc.nextInt();
+   int B = sc.nextInt();
+   int C = sc.nextInt();
+   if((A+B+C)==180)
+   System.out.println("YES");
+   if((A+B+C)>180 || ((A+B+C)<180))
+   System.out.println("NO");
 }
 }
 }

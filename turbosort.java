@@ -9,16 +9,17 @@ public static void main (String[] args) throws java.lang.Exception
 {
 // your code goes here
 Scanner sc = new Scanner(System.in);
-int T = sc.nextInt();
-for(int i=1; i<=T ; i++)
+int t = sc.nextInt();
+int n[] = new int[t];
+for(int i=0 ; i<t ; i++)
 {
-   int fact=1;
-   int N = sc.nextInt();
-   for(int j=1 ; j<=N ; j++)
-   {
-       fact = fact*j;
-   }
-   System.out.println(fact);
+   n[i] = sc.nextInt();
 }
+Arrays.sort(n);
+for(int j=0 ; j<t ; j++)
+{
+   System.out.println(n[j]);
+}
+
 }
 }

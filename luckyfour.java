@@ -12,13 +12,17 @@ Scanner sc = new Scanner(System.in);
 int T = sc.nextInt();
 for(int i=1; i<=T ; i++)
 {
-   int fact=1;
-   int N = sc.nextInt();
-   for(int j=1 ; j<=N ; j++)
+   int count=0;
+   int n = sc.nextInt();
+   while(n!=0)
    {
-       fact = fact*j;
+       if((n%10) == 4)
+       {
+           count++;
+       }
+       n=n/10;
    }
-   System.out.println(fact);
+   System.out.println(count);
 }
 }
 }

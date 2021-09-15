@@ -9,16 +9,19 @@ public static void main (String[] args) throws java.lang.Exception
 {
 // your code goes here
 Scanner sc = new Scanner(System.in);
-int T = sc.nextInt();
-for(int i=1; i<=T ; i++)
+int num = sc.nextInt();
+while(num-->0)
 {
-   int fact=1;
-   int N = sc.nextInt();
-   for(int j=1 ; j<=N ; j++)
+   int p = sc.nextInt();
+   int max = 2048;
+   int count = 0;
+   while(max>0)
    {
-       fact = fact*j;
+       count = count + (p/max);
+       p = p%max;
+       max = max/2;
    }
-   System.out.println(fact);
+   System.out.println(count);
 }
 }
 }

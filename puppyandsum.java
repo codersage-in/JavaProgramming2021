@@ -9,16 +9,18 @@ public static void main (String[] args) throws java.lang.Exception
 {
 // your code goes here
 Scanner sc = new Scanner(System.in);
-int T = sc.nextInt();
-for(int i=1; i<=T ; i++)
-{
-   int fact=1;
-   int N = sc.nextInt();
-   for(int j=1 ; j<=N ; j++)
-   {
-       fact = fact*j;
+int num = sc.nextInt();
+
+while(num-->0){
+   int a = sc.nextInt();
+   int b = sc.nextInt();
+       int sum=0;
+       
+   while(a-->0){
+       sum = (b*(b+1))/2;
+       b=sum;
    }
-   System.out.println(fact);
+   System.out.println(sum);
 }
 }
 }

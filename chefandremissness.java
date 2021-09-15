@@ -10,15 +10,17 @@ public static void main (String[] args) throws java.lang.Exception
 // your code goes here
 Scanner sc = new Scanner(System.in);
 int T = sc.nextInt();
-for(int i=1; i<=T ; i++)
+for(int i =1 ; i<=T ; i++)
 {
-   int fact=1;
-   int N = sc.nextInt();
-   for(int j=1 ; j<=N ; j++)
+   int A = sc.nextInt();
+   int B = sc.nextInt();
+   if(A>B)
    {
-       fact = fact*j;
+       System.out.println(A + " " + (A+B));
    }
-   System.out.println(fact);
+   else{
+       System.out.println(B + " " + (B+A));
+   }
 }
 }
 }

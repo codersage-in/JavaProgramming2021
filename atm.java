@@ -1,3 +1,4 @@
+
 import java.util.*;
 import java.lang.*;
 import java.io.*;
@@ -9,16 +10,12 @@ public static void main (String[] args) throws java.lang.Exception
 {
 // your code goes here
 Scanner sc = new Scanner(System.in);
-int T = sc.nextInt();
-for(int i=1; i<=T ; i++)
-{
-   int fact=1;
-   int N = sc.nextInt();
-   for(int j=1 ; j<=N ; j++)
-   {
-       fact = fact*j;
-   }
-   System.out.println(fact);
-}
+int X = sc.nextInt();
+double Y = sc.nextDouble();
+if((X+0.5)<=Y && (X%5==0))
+        {
+            Y=Y - (X+0.5);
+        }
+        System.out.printf("%.2f", Y);
 }
 }

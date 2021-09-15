@@ -9,16 +9,15 @@ public static void main (String[] args) throws java.lang.Exception
 {
 // your code goes here
 Scanner sc = new Scanner(System.in);
-int T = sc.nextInt();
-for(int i=1; i<=T ; i++)
+int N1 = sc.nextInt();
+int N2 = sc.nextInt();
+if(N1>N2)
 {
-   int fact=1;
-   int N = sc.nextInt();
-   for(int j=1 ; j<=N ; j++)
-   {
-       fact = fact*j;
-   }
-   System.out.println(fact);
+   System.out.println(N1 - N2);
+}
+else
+{
+   System.out.println(N1 + N2);
 }
 }
 }
